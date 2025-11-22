@@ -1,0 +1,151 @@
+/* Fonte personalizada */
+body {
+  font-family: 'Quicksand', sans-serif; /* Define a fonte principal do site como Quicksand */
+  background: linear-gradient(to bottom, #ffffff 0%, #9c9c9c 100%); /* degrade vertical */
+}
+
+/* Navbar refinada */
+.navbar { /* Consertar customização da navbar */
+  font-size: 16px; /* Tamanho da fonte da barra de navegação */
+  transition: box-shadow 0.3s ease; /* Transição suave para a sombra ao passar o mouse */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Adiciona sombra à navbar ao passar o mouse */
+}
+
+/* Logomarca */
+.navbar-brand span {
+  font-size: 1.3rem; /* Tamanho da fonte do nome principal da marca */
+  font-weight: 700; /* Peso da fonte em negrito */
+  color: rgb(211, 186, 0); /* Cor azul padrão do Bootstrap */
+}
+
+.navbar-brand small {
+  font-size: 0.85rem; /* Tamanho menor para o subtítulo da marca */
+  color: rgb(211, 186, 0); /* Cor laranja vibrante */
+}
+
+/* Imagem da logo */
+.navbar-brand img {
+  transition: transform 0.3s ease; /* Transição suave para transformação da imagem */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+/* Links do menu */
+.nav-link {
+  position: relative; /* Permite posicionamento relativo para pseudo-elementos */
+  padding: 0.5rem 1rem; /* Espaçamento interno dos links */
+  transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.nav-link::after {
+  content: ''; /* Cria um pseudo-elemento vazio para a linha animada */
+  position: absolute; /* Posiciona a linha em relação ao link */
+  width: 0%; /* Começa com largura zero */
+  height: 2px; /* Altura da linha */
+  bottom: 0; /* Posiciona a linha na parte inferior do link */
+  left: 0; /* Alinha à esquerda */
+  background-color: currentColor; /* Usa a cor atual do texto */
+  transition: width 0.3s ease; /* Transição suave da largura da linha */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expande a linha para toda a largura do link ao passar o mouse */
+}
+
+/* Cores de texto personalizadas */
+.text-purple {
+  color: #d3ba00;
+}
+
+.text-success {
+  color: #d3ba00;
+}
+
+.text-danger {
+  color: #d3ba00;
+}
+
+.text-primary {
+  color: #d3ba00;
+}
+
+/* Dropdown refinado */
+.dropdown-menu {
+  border-radius: 0.5rem; /* Bordas arredondadas do menu suspenso */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra leve para destacar o menu */
+}
+
+.dropdown-item {
+  transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave de cor e fundo */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
+  color: rgb(211, 186, 0); /* Cor roxa ao passar o mouse */
+}
+
+.navbar {
+  background-color: #e0f7e9;
+  padding: 1em 0;
+  border-bottom: 1px solid #cdebdc;
+}
+
+.logo {
+  font-size: 1.8em;
+  color: rgb(211, 186, 0);
+  margin-left: 1em;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin-right: 1em;
+  justify-content: flex-end;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: rgb(211, 186, 0);
+  font-weight: 500;
+}
+
+.nav-menu a.active {
+  border-bottom: 2px solid rgb(211, 186, 0);
+}
+
+.main-content {
+  padding: 2em;
+  text-align: center;
+}
+
+.produto-img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 1em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.footer {
+  background-color: #e0f7e9;
+  color: rgb(211, 186, 0);
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 3em;
+  border-top: 1px solid #cdebdc;
+}
+
+.social-icons a {
+  color: rgb(211, 186, 0);
+  margin: 0 0.5em;
+  font-size: 1.4em;
+}
