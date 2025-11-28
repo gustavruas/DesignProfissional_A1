@@ -1,0 +1,138 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Curriculo}
+\author{\LaTeX{} Template de Ninja(eu editei fds)}
+\date{Novembro 2025}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Começo}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{passaro.png}
+\end{center}
+
+\bigskip
+
+\bg{cvgreen}{white}{Interesses}\\[0.5em]
+
+\texttt{Jogos indie} ~/~ \texttt{Linux} ~/~ \texttt{Filmes de ficção}
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{gustavruas@hotmail.com}
+\infobubble{\faTwitter}{cvgreen}{white}{@ChicoPalito}
+\infobubble{\faGithub}{cvgreen}{white}{gustavruas}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Curriculo}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2006--2024}{Mestre no free fire}{Df}{Brasilia \color{cvred}}{Joguei profissional para a LOUD Gaming, fiz live na Twitch com o Alanzoka e fui socio do Monark, tudo isso, claro, para ser melhor no free fire}{disney.png} \\
+    \cvevent{2024--2025}{Técnico em técnologia da informação}{Bsb}{ \color{cvred}}{Respondo emails e finjo que sei programar pra eles continuarem me pagando!!}{medal.jpeg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Educação}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2025}{Ads}{Cursando}{UDF \color{headerblue}}{}{disney.png} \\
+    \cvdegree{2022}{Biblioteconomia}{Formado}{Estácio \color{headerblue}}{}{medal.jpeg} \\
+
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Inglês} & & {\phantom{x}\footnotesize Fluente} \\
+\textbf{Inglês} & & {\phantom{x}\footnotesize Nativo} \\
+\textbf{Espanhol} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Gustavo Ruas \icon{\faMapMarker}{cvgreen}{} Brasilia \icon{\faPhone}{cvgreen}{} 61983561410 \newline\icon{\faAt}{cvgreen}{} \protect\url{gustavruas@hotmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
